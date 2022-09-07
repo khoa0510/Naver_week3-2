@@ -10,10 +10,5 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleExceptionA(Exception e) {
         return ResponseEntity.status(400).body("Bad Request");
     }
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<String> handleUnwantedException(Exception e) {
-        return ResponseEntity.status(500).body("Unknown error");
-    }
 }
 
